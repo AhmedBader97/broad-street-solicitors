@@ -235,7 +235,8 @@ h4 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; }
   position: relative;
   z-index: 2;
   color: var(--white);
-  padding: 120px 0 80px;
+  padding-top: 120px;
+  padding-bottom: 80px;
   max-width: 750px;
 }
 
@@ -910,7 +911,7 @@ h4 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; }
   .nav-toggle { display: block; z-index: 999; }
 
   .hero { min-height: auto; }
-  .hero-content { padding: 90px 0 50px; max-width: 100%; }
+  .hero-content { padding-top: 90px; padding-bottom: 50px; max-width: 100%; }
   .hero h1 { font-size: 2rem; }
   .hero-tagline { font-size: 0.75rem; }
   .hero-sub { font-size: 1rem; }
