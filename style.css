@@ -871,6 +871,8 @@ h4 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; }
 
   .about-image-inner img { height: 300px; }
 
+  .pricing-tables { grid-template-columns: 1fr; }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -878,6 +880,14 @@ h4 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; }
 }
 
 @media (max-width: 640px) {
+  html { scroll-padding-top: 60px; }
+
+  body { overflow-x: hidden; }
+
+  .navbar { padding: 0.75rem 0; }
+  .logo img { height: 35px; }
+  .navbar.scrolled .logo img { height: 32px; }
+
   .nav-links {
     display: none;
     position: fixed;
@@ -889,36 +899,62 @@ h4 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.75rem;
     z-index: 998;
   }
 
   .nav-links.active { display: flex; }
-
-  .nav-links a { font-size: 1.2rem; }
-
+  .nav-links a { font-size: 1.1rem; }
   .nav-toggle { display: block; z-index: 999; }
 
-  .hero-content { padding: 100px 0 60px; }
+  .hero { min-height: auto; }
+  .hero-content { padding: 90px 0 50px; }
+  .hero h1 { font-size: 2rem; }
+  .hero-sub { font-size: 1rem; }
 
   .hero-stats {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
   }
 
   .stat-divider { display: none; }
+  .stat-number { font-size: 1.5rem; }
 
   .hero-buttons { flex-direction: column; }
   .hero-buttons .btn { width: 100%; }
 
+  .about, .services, .team, .contact, .pricing { padding: 4rem 0; }
+
+  .about-image-inner img { height: 250px; }
+
   .services-grid { grid-template-columns: 1fr; }
+  .service-card { padding: 1.5rem; }
 
-  .team-grid { grid-template-columns: 1fr 1fr; }
+  .rates-grid { grid-template-columns: 1fr 1fr; }
+  .rate-price { font-size: 1.4rem; }
 
+  .pricing-tables { grid-template-columns: 1fr; }
+  .pricing-table { padding: 1.5rem; }
+  .pricing-table td { font-size: 0.82rem; padding: 0.6rem 0; }
+
+  .team-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .team-card { padding: 1.5rem 1rem; }
+  .team-avatar { width: 60px; height: 60px; font-size: 1.1rem; }
+
+  .cta-banner { padding: 3.5rem 0; }
+  .cta-content h2 { font-size: 1.5rem; }
+
+  .contact-form-wrap { padding: 1.5rem; }
   .form-row { grid-template-columns: 1fr; }
 
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer { padding: 3rem 0 0; }
 
   .section-header { margin-bottom: 2.5rem; }
+  .section-desc { font-size: 0.95rem; }
+
+  .map iframe { height: 250px; }
 }
